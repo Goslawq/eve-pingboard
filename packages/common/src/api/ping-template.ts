@@ -3,6 +3,7 @@ import { NeucoreGroup } from '..'
 export interface ApiPingTemplateInput {
   name: string
   slackChannelId: string
+  discordChannelId?: string | null
   template: string
   allowedNeucoreGroups: string[]
   allowScheduling?: boolean
@@ -11,6 +12,7 @@ export interface ApiPingTemplateInput {
 export interface ApiPingTemplate extends ApiPingTemplateInput {
   id: number
   slackChannelName: string
+  discordChannelId?: string | null
   updatedBy: string
   updatedAt: string
 }
