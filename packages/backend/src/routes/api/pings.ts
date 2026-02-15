@@ -243,7 +243,7 @@ export function getRouter(options: {
   )
 
   router.put(
-    '/templates/:templateId',
+    '/templates/templateId',
     userRoles.requireOneFreshOf(UserRoles.PING_TEMPLATES_WRITE),
     async ctx => {
       const templateId = parseInt(ctx.params['templateId'] ?? '', 10)
@@ -272,7 +272,7 @@ export function getRouter(options: {
   )
 
   router.delete(
-    '/templates/:templateId',
+    '/templates/templateId',
     userRoles.requireOneFreshOf(UserRoles.PING_TEMPLATES_WRITE),
     async ctx => {
       const templateId = parseInt(ctx.params['templateId'] ?? '', 10)
