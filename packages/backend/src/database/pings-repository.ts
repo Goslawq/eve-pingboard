@@ -382,6 +382,7 @@ function rawToPingTemplate(
     allowScheduling: !!template.allow_scheduling,
     updatedAt: template.updated_at.toISOString(),
     updatedBy: template.updated_by,
+    discordChannelId: template.discord_channel_id,
   }
 }
 

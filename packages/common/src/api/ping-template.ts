@@ -12,7 +12,6 @@ export interface ApiPingTemplateInput {
 export interface ApiPingTemplate extends ApiPingTemplateInput {
   id: number
   slackChannelName: string
-  discordChannelId?: string | null
   updatedBy: string
   updatedAt: string
 }
